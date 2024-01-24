@@ -7,7 +7,7 @@ stdin.on('data', (data) => {
   if (data.toString().trim() === 'exit') {
     exit();
   } else {
-    fs.appendFile('02-write-file.txt', data, (err) => {
+    fs.appendFile('02-write-file/02-write-file.txt', data, (err) => {
       if (err) throw err;
     });
   }
